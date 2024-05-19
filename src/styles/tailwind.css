@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Gothic&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+#__next {
+  min-height: 100%;
+}
