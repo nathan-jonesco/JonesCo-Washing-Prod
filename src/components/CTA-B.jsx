@@ -16,7 +16,7 @@ export default function CallToActionGreen() { // New component name
           href="/contact"
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-gradient-to-r from-JonesCo-Green-500 to-JonesCo-Green-700 hover:from-JonesCo-Green-600 hover:to-JonesCo-Green-800 text-white font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 ease-in-out transform hover:scale-105 animate-pulse"
+          className="bg-gradient-to-r from-JonesCo-Orange-500 to-JonesCo-Orange-700 hover:from-JonesCo-Orange-600 hover:to-JonesCo-Orange-800 text-white font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 ease-in-out transform hover:scale-105 animate-pulse"
         >
           Book Your Free Consultation
         </a>

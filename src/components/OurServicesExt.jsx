@@ -37,7 +37,7 @@ export default function ServicesDetails() {
     <div className="bg-white py-16 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-none">
-          <h2 className="text-base font-semibold leading-7 text-JonesCo-Green-600">
+          <h2 className="text-base font-semibold leading-7 text-JonesCo-Orange-600">
             Comprehensive Gutter Care
           </h2>
           <h1 className="text-4xl font-black tracking-tight sm:text-5xl lg:text-6xl text-gray-900 mt-2">
@@ -47,9 +47,9 @@ export default function ServicesDetails() {
             {features.map((feature) => (
               <Fragment key={feature.id}>
                 <div className="relative pl-9">
-                  <dt className="font-semibold text-JonesCo-Green-900">
+                  <dt className="font-semibold text-JonesCo-Orange-900">
                     <span
-                      className="absolute left-0 top-1 h-5 w-5 text-JonesCo-Green-500"
+                      className="absolute left-0 top-1 h-5 w-5 text-JonesCo-Orange-500"
                       aria-hidden="true"
                     >
                       ✔

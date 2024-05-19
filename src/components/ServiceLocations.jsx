@@ -49,10 +49,10 @@ export default function Example() {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
           <div>
-            <h2 className="text-base font-semibold leading-7 text-JonesCo-Green-600">
+            <h2 className="text-base font-semibold leading-7 text-JonesCo-Orange-600">
               Eastern Tennessee Focused,
             </h2>
-            <p className="text-JonesCo-Green-900 mt-2 text-4xl font-black tracking-tight sm:text-5xl">
+            <p className="text-JonesCo-Orange-900 mt-2 text-4xl font-black tracking-tight sm:text-5xl">
               Service Driven
             </p>
             <p className="text-gray-600 mt-6 text-base leading-7">
@@ -69,7 +69,7 @@ export default function Example() {
               <div key={feature.name} className="relative pl-9">
                 <dt className="text-gray-900 font-semibold">
                   <CheckIcon
-                    className="absolute left-0 top-1 h-5 w-5 text-JonesCo-Green-500"
+                    className="absolute left-0 top-1 h-5 w-5 text-JonesCo-Orange-500"
                     aria-hidden="true"
                   />
                   {feature.name}

@@ -6,17 +6,17 @@ export default function Hero() {
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat animate-pan-slow"
         style={{
-          backgroundImage: `url(/Stock/home-10.webp)`,
+          backgroundImage: `url(/Stock/pressure-washing-hero.webp)`, // Replace with actual image path for pressure washing
           height: '600px'
         }}
       ></div>
       <div className="absolute inset-0 bg-black/80"></div>
       <div className="container mx-auto py-32 px-4 text-center relative z-10">
         <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold mb-4 drop-shadow-lg mt-20">
-          Got Gutter Problems?
+          Need Pressure or Window Washing?
         </h1>
         <p className="text-md md:text-xl mb-8 drop-shadow-md">
-          Protect your home and enjoy peace of mind with our professional gutter solutions.
+          Enhance your property's appearance with our professional cleaning services.
         </p>
         <div className="flex justify-center space-x-4 mt-12">
           <a
@@ -32,7 +32,7 @@ export default function Hero() {
             href="/contact"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-JonesCo-Blue-700 hover:bg-JonesCo-Blue-600 text-white font-bold py-3 px-3 rounded-full transform transition-transform duration-300 hover:scale-110 hover:shadow-lg active:scale-95 focus:outline-none focus:ring focus:ring-JonesCo-Blue-300 animate-pulse"
+            className="bg-JonesCo-Blue-700 hover:bg-JonesCo-Blue-600 text-white font-bold py-3 px-3 rounded-full transform transition-transform duration-300 hover:scale-110 hover:shadow-lg active:scale-95 focus:outline-none focus:ring focus:ring-JonesCo-Orange-300 animate-pulse"
           >
             Book Free Estimate
           </a>

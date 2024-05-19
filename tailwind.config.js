@@ -46,7 +46,7 @@ module.exports = {
       900: '#660805',
       950: '#4e0302',
     },
-      'JonesCo-Green': {
+      'JonesCo-Orange': {
         50: '#f0fdf1',
         100: '#dcfcdf',
         200: '#bbf7c1',
@@ -58,6 +58,19 @@ module.exports = {
         800: '#166520',
         900: '#14531d',
         950: '#052e0c',
+    },
+    'JonesCo-Orange': { // Replaced 'JonesCo-Orange' with 'JonesCo-Orange'
+      50: '#fff5f2',  // Lightest orange
+      100: '#ffe9dd',
+      200: '#ffd6b8',
+      300: '#ffc28c',
+      400: '#ffab5a',
+      500: '#FF5C00', // Your base orange
+      600: '#e65000',
+      700: '#cc4300',
+      800: '#b33700',
+      900: '#992a00',
+      950: '#7f1e00',  // Darkest orange
     },
       'JC-tan': {
         50: '#fff9eb',

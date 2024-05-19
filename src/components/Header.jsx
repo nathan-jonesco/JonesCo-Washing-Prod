@@ -7,14 +7,10 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 const navigation = [
-
-  { name: 'Get Started', href: '/contact' },
   { name: 'Services', href: '/services' },
   { name: 'Locations', href: '/servicelocations' },
   { name: 'Why', href: '/why' },
   { name: 'About Us', href: '/about' },
-  { name: 'Contact Us', href: '/contact' },
-  { name: 'Log In', href: 'https://clienthub.getjobber.com/client_hubs/1b0129bf-9730-46bf-9d7c-a34501f74690/login/new?source=share_login' },
 ];
 
 export default function Header() {
@@ -81,7 +77,7 @@ export default function Header() {
             </button>
           </div>
           <div className="mt-6 flow-root">
-            <div className="-my-6 divide-y divide-JonesCo-Green-900">
+            <div className="-my-6 divide-y divide-JonesCo-Orange-900">
               <div className="space-y-2 py-6">
                 {navigation.map((item) => (
                   <a

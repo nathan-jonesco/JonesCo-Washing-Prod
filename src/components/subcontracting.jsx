@@ -8,7 +8,7 @@ export default function DeveloperPartnership() {
           <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
             Looking for a Reliable Gutter Subcontractor?
           </h2>
-          <p className="mt-4 text-lg leading-8 text-JonesCo-Green-300">
+          <p className="mt-4 text-lg leading-8 text-JonesCo-Orange-300">
             Partner with JonesCo Gutters and ensure seamless gutter solutions for your Eastern Tennessee projects.
           </p>
         </div>
@@ -55,7 +55,7 @@ export default function DeveloperPartnership() {
         <div className="mt-12 text-center">
           <a
             href="mailto:hey@jonescogutters.com"
-            className="inline-flex items-center justify-center rounded-md border border-transparent bg-JonesCo-Green-500 px-8 py-3 text-base font-medium text-JonesCo-Green-900 hover:bg-JonesCo-Green-400 focus:outline-none focus:ring-2 focus:ring-JonesCo-Green-500 focus:ring-offset-2"
+            className="inline-flex items-center justify-center rounded-md border border-transparent bg-JonesCo-Orange-500 px-8 py-3 text-base font-medium text-JonesCo-Orange-900 hover:bg-JonesCo-Orange-400 focus:outline-none focus:ring-2 focus:ring-JonesCo-Orange-500 focus:ring-offset-2"
           >
             Email Us Today 📬
           </a>

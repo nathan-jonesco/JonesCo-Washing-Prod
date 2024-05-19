@@ -2,10 +2,10 @@ import Image from 'next/image';
 
 export default function AboutUs() {
   return (
-    <div className="bg-gradient-to-r from-JonesCo-Blue-500 to-JonesCo-Green-700 text-white py-24 sm:py-32">
+    <div className="bg-gradient-to-r from-JonesCo-Blue-500 to-JonesCo-Orange-700 text-white py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto lg:text-center">
-          <h2 className="text-base font-semibold leading-7 text-JonesCo-Green-200">
+          <h2 className="text-base font-semibold leading-7 text-JonesCo-Orange-200">
             Meet the Man Behind the Gutters
           </h2>
           <p className="mt-2 text-2xl font-bold tracking-tight text-white sm:text-3xl">
