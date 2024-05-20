@@ -11,7 +11,7 @@ export default function Example() {
         <div className="pointer-events-auto flex items-center justify-between gap-x-6 bg-JonesCo-Orange-600 px-6 py-2.5 sm:rounded-xl sm:py-3 sm:pl-4 sm:pr-3.5">
           <p className="text-sm leading-6 text-white">
             <a href="#">
-              <strong className="font-semibold">🎉 Coming to Eastern TN in 2026!</strong>
+              <strong className="font-semibold">🎉 Coming to Eastern TN in 2025!</strong>
             </a>
           </p>
           <button type="button" className="-m-1.5 flex-none p-1.5">

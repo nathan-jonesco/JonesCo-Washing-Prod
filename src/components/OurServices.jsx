@@ -61,7 +61,7 @@ export default function ServicesSection() {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:mx-0">
           <h2 className="text-base font-semibold leading-7 text-JonesCo-Orange-400">Comprehensive Cleaning Services</h2>
-          <p className="mt-2 text-lg font-bold tracking-tight text-white sm:text-4xl">Enhance Your Property's Appearance</p>
+          <p className="mt-2 text-lg font-bold tracking-tight text-white sm:text-3xl">Enhance Your Property's Appearance</p>
           <p className="mt-6 text-white text-lg leading-8 text-gray-300">
             Ensure the longevity and beauty of your property with our premium cleaning services. We offer expert pressure washing, window cleaning, and more.
           </p>

@@ -1,37 +1,33 @@
-import { ExclamationTriangleIcon } from '@heroicons/react/24/outline'; // Replace with your icon library
+import { CheckCircleIcon } from '@heroicons/react/24/outline';
+import Script from 'next/script';
 
-const stats = [
-  { id: 1, name: 'Gutter Lifespan:', value: '-50% without maintenance' },
-  { id: 2, name: 'Clogged Gutters:', value: '80% pest risk increase' },
-  { id: 3, name: 'Water Damage:', value: '90% mold growth' },
-  { id: 4, name: 'Home Value:', value: '-10% with bad gutters' },
-  { id: 5, name: 'Gutter Debris:', value: 'Fire hazard risk' },
-  { id: 6, name: 'Replace Gutters:', value: '$20-$30 per foot' }, 
-];
-
-
-export default function GutterStatsCTA() {
+export default function ConvertCTA() {
   return (
-    <div className="bg-JonesCo-Red-900 py-16 sm:py-32">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="mx-auto max-w-2xl lg:max-w-none">
-          <div className="text-center">
-            <ExclamationTriangleIcon className="h-12 w-12 text-white mx-auto mb-10 animate-ping" />
-            <h2 className="text-2xl font-bold tracking-tight text-white sm:text-4xl">Protect Your Home from Preventable Damage!</h2>
-            <p className="mt-4 text-lg leading-8 text-white">
-              Don&apos;t risk costly repairs. These statistics show why gutter maintenance is essential:
-            </p>
-          </div>
-          <dl className="mt-16 grid grid-cols-1 gap-0.5 overflow-hidden rounded-2xl text-center sm:grid-cols-2 lg:grid-cols-3">
-            {stats.map((stat) => (
-              <div key={stat.id} className="flex flex-col bg-JonesCo-Red-800/70 p-8">
-                
-                <dd className="text-md font-semibold leading-6 text-JonesCo-Red-300">{stat.name}</dd>
-                <dt className="order-first text-xl font-semibold tracking-tight text-white">{stat.value}</dt>
-
-              </div>
-            ))}
-          </dl>
+    <div className="bg-JonesCo-Blue-900 py-16 px-4 text-white">
+      <div className="container mx-auto text-center">
+        <CheckCircleIcon className="h-12 w-12 text-green-400 mx-auto mb-6 animate-bounce" />
+        <h2 className="text-4xl font-bold mb-4 animate-pulse">
+          Don't Wait – Protect and Enhance Your Property Now!
+        </h2>
+        <p className="text-lg mb-8">
+          Join hundreds of satisfied customers who have experienced the JonesCo difference. Request a free, no-obligation quote today!
+        </p>
+        <div className="relative mx-auto max-w-xl lg:max-w-4xl">
+          <div id="1b0129bf-9730-46bf-9d7c-a34501f74690"></div>
+          <link rel="stylesheet" href="https://d3ey4dbjkt2f6s.cloudfront.net/assets/external/work_request_embed.css" media="screen" />
+          <Script 
+            src="https://d3ey4dbjkt2f6s.cloudfront.net/assets/static_link/work_request_embed_snippet.js" 
+            clienthub_id="1b0129bf-9730-46bf-9d7c-a34501f74690" 
+            form_url="https://clienthub.getjobber.com/client_hubs/1b0129bf-9730-46bf-9d7c-a34501f74690/public/work_request/embedded_work_request_form" 
+          />
+        </div>
+        <div className="mt-12">
+          <a
+            href="/contact"
+            className="bg-JonesCo-Orange-500 hover:bg-JonesCo-Orange-600 text-white font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 ease-in-out transform hover:scale-110"
+          >
+            Contact Us Today
+          </a>
         </div>
       </div>
     </div>

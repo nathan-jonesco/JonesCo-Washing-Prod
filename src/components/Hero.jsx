@@ -6,7 +6,7 @@ export default function Hero() {
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat animate-pan-slow"
         style={{
-          backgroundImage: `url(/Stock/pressure-washing-hero.webp)`, // Replace with actual image path for pressure washing
+          backgroundImage: `url(/Stock/pressure.webp)`, // Replace with actual image path for pressure washing
           height: '600px'
         }}
       ></div>

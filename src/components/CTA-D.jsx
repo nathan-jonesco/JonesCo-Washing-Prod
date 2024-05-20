@@ -1,25 +1,23 @@
 import React from 'react';
 
-export default function CallToActionCrazy() {
+export default function CallToAction() {
   return (
-    <div className="bg-JonesCo-Red-500 py-16 px-4 text-center"> 
-      <div className="max-w-5xl mx-auto">
-        <h2 className="text-4xl md:text-5xl font-extrabold mb-6 text-white drop-shadow-lg">
-          Gutters Leaking? 
-          <span className="text-JonesCo-Yellow-300 animate-bounce"> Don&apos;t Be a Drip!</span>
+    <div className="bg-white py-12 px-4">
+      <div className="max-w-5xl mx-auto text-center">
+        <h2 className="text-3xl font-bold mb-4 text-gray-900">
+          Brighten Up Your Home!
         </h2>
-        <p className="text-xl md:text-2xl text-white/80 mb-10">
-          Stop the drip, ditch the worry. Call Jonesco for a free, no-obligation quote and let us handle it the right way!
+        <p className="text-lg text-gray-600 mb-8">
+          Enjoy our top-notch pressure and window washing services.
         </p>
 
-        {/* Bold Red Button with Pulse Animation */}
         <a
           href="/contact"
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-white hover:bg-gray-200 text-JonesCo-Red-500 font-black py-4 px-10 rounded-full shadow-xl transition duration-300 ease-in-out transform hover:scale-110 animate-pulse"
+          className="bg-gradient-to-r from-JonesCo-Orange-500 to-JonesCo-Blue-700 hover:from-JonesCo-Orange-600 hover:to-JonesCo-Blue-800 text-white font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 ease-in-out transform hover:scale-105 animate-pulse"
         >
-          Stop the Drip NOW!
+          Claim Your Free Estimate!
         </a>
       </div>
     </div>

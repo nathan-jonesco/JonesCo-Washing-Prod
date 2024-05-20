@@ -6,10 +6,10 @@ export default function DeveloperPartnership() {
       <div className="mx-auto max-w-7xl">
         <div className="text-center">
           <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
-            Looking for a Reliable Gutter Subcontractor?
+            Looking for a Reliable Pressure & Window Washing Subcontractor?
           </h2>
           <p className="mt-4 text-lg leading-8 text-JonesCo-Orange-300">
-            Partner with JonesCo Gutters and ensure seamless gutter solutions for your Eastern Tennessee projects.
+            Partner with JonesCo Washing and ensure pristine cleanliness for your Eastern Tennessee projects.
           </p>
         </div>
 
@@ -17,31 +17,31 @@ export default function DeveloperPartnership() {
           <div className="p-6 bg-white rounded-lg shadow-md">
             <h3 className="text-xl font-bold text-JonesCo-Blue-900 mb-2">Expertise & Experience</h3>
             <p className="text-JonesCo-Blue-600">
-            Our track record speaks for itself. We&apos;ve successfully completed numerous gutter projects throughout Eastern Tennessee, consistently exceeding expectations.
+              Our track record speaks for itself. We&apos;ve successfully completed numerous washing projects throughout Eastern Tennessee, consistently exceeding expectations.
             </p>
           </div>
           <div className="p-6 bg-white rounded-lg shadow-md">
             <h3 className="text-xl font-bold text-JonesCo-Blue-900 mb-2">Quality & Durability</h3>
             <p className="text-JonesCo-Blue-600">
-              We use only the highest quality seamless aluminum gutters and materials, ensuring long-lasting performance and protection for your homes.
+              We use only the highest quality materials and techniques, ensuring long-lasting cleanliness and protection for your properties.
             </p>
           </div>
           <div className="p-6 bg-white rounded-lg shadow-md">
             <h3 className="text-xl font-bold text-JonesCo-Blue-900 mb-2">Efficient & Reliable</h3>
             <p className="text-JonesCo-Blue-600">
-              We work seamlessly with your team, providing timely and efficient gutter installations that meet your project timelines and budgets.
+              We work seamlessly with your team, providing timely and efficient washing services that meet your project timelines and budgets.
             </p>
           </div>
           <div className="p-6 bg-white rounded-lg shadow-md">
             <h3 className="text-xl font-bold text-JonesCo-Blue-900 mb-2">Comprehensive Services</h3>
             <p className="text-JonesCo-Blue-600">
-              We offer a complete range of gutter services, from design and installation to maintenance and repair, providing a one-stop solution for your projects.
+              We offer a complete range of washing services, from pressure washing to window cleaning, providing a one-stop solution for your projects.
             </p>
           </div>
           <div className="p-6 bg-white rounded-lg shadow-md">
             <h3 className="text-xl font-bold text-JonesCo-Blue-900 mb-2">Customer Satisfaction</h3>
             <p className="text-JonesCo-Blue-600">
-              We&apos;re dedicated to exceeding your expectations and ensuring your homeowners are happy with their gutter systems. Our 98% customer satisfaction rate speaks for itself.
+              We&apos;re dedicated to exceeding your expectations and ensuring your clients are happy with their clean spaces. Our 98% customer satisfaction rate speaks for itself.
             </p>
           </div>
           <div className="p-6 bg-white rounded-lg shadow-md">
@@ -54,8 +54,8 @@ export default function DeveloperPartnership() {
 
         <div className="mt-12 text-center">
           <a
-            href="mailto:hey@jonescogutters.com"
-            className="inline-flex items-center justify-center rounded-md border border-transparent bg-JonesCo-Orange-500 px-8 py-3 text-base font-medium text-JonesCo-Orange-900 hover:bg-JonesCo-Orange-400 focus:outline-none focus:ring-2 focus:ring-JonesCo-Orange-500 focus:ring-offset-2"
+            href="mailto:hey@jonescowashing.com"
+            className="inline-flex items-center justify-center rounded-md border border-transparent bg-JonesCo-Orange-500 px-8 py-3 text-base font-medium text-JonesCo-Orange-100 hover:bg-JonesCo-Orange-400 focus:outline-none focus:ring-2 focus:ring-JonesCo-Orange-500 focus:ring-offset-2"
           >
             Email Us Today 📬
           </a>
