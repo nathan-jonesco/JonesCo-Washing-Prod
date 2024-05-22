@@ -5,8 +5,8 @@ export default function ConvertCTA() {
   return (
     <div className="bg-JonesCo-Blue-900 py-16 px-4 text-white">
       <div className="container mx-auto text-center">
-        <CheckCircleIcon className="h-12 w-12 text-green-400 mx-auto mb-6 animate-bounce" />
-        <h2 className="text-4xl font-bold mb-4 animate-pulse">
+        <CheckCircleIcon className="h-12 w-12 text-JonesCo-Orange-500 mx-auto mb-6 animate-bounce" />
+        <h2 className="text-xl sm:text-4xl font-bold mb-4 animate-pulse">
           Don't Wait – Protect and Enhance Your Property Now!
         </h2>
         <p className="text-lg mb-8">
@@ -20,14 +20,6 @@ export default function ConvertCTA() {
             clienthub_id="1b0129bf-9730-46bf-9d7c-a34501f74690" 
             form_url="https://clienthub.getjobber.com/client_hubs/1b0129bf-9730-46bf-9d7c-a34501f74690/public/work_request/embedded_work_request_form" 
           />
-        </div>
-        <div className="mt-12">
-          <a
-            href="/contact"
-            className="bg-JonesCo-Orange-500 hover:bg-JonesCo-Orange-600 text-white font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 ease-in-out transform hover:scale-110"
-          >
-            Contact Us Today
-          </a>
         </div>
       </div>
     </div>

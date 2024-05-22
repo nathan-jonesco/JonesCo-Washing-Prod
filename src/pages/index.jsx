@@ -46,7 +46,6 @@ export default function Home() {
         <CTAA />
 
         <John />
-        <CTAD />
 
 
 

@@ -12,11 +12,11 @@ export default function Hero() {
       ></div>
       <div className="absolute inset-0 bg-black/80"></div>
       <div className="container mx-auto py-32 px-4 text-center relative z-10">
-        <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold mb-4 drop-shadow-lg mt-20">
-          Need Pressure or Window Washing?
+        <h1 className="text-3xl sm:text-4xl md:text-6xl font-black mb-4 drop-shadow-lg mt-20">
+          Dirty Home Exterior?
         </h1>
         <p className="text-md md:text-xl mb-8 drop-shadow-md">
-          Enhance your property's appearance with our professional cleaning services.
+          Enhance your property's appearance with our world class window and pressure washing services.
         </p>
         <div className="flex justify-center space-x-4 mt-12">
           <a
