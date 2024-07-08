@@ -1,56 +1,21 @@
-import Head from 'next/head'
-import CTAA from '@/components/CTA-A'
-import CTAB from '@/components/CTA-B'
-import CTAC from '@/components/CTA-C'
-import CTAD from '@/components/CTA-D'
-import Footer from '@/components/Footer'
-import Header from '@/components/Header'
-import Hero from '@/components/Hero'
-import OurServices from '@/components/OurServices'
-import ServiceLocations from '@/components/ServiceLocationsCity'
-import WhyJonesCo from '@/components/Value'
-import John from '@/components/Why'
-import Subcontracting from '@/components/subcontracting'
+// pages/under-construction.js
 
+import React from 'react';
+import Head from 'next/head';
 
-import Banner from '@/components/banner'
-
-export default function Home() {
+const UnderConstruction = () => {
   return (
-    <>
+    <div className="min-h-screen flex items-center justify-center bg-gray-100">
       <Head>
-        <title>JonesCo Seamless Gutter Systems || Home</title>
-        <meta name="theme-color" content="#C5F5CA" />
-        <meta name="robots" content="index, follow" />
-        <meta
-          name="description"
-          content="Expert Installations for Lasting Home Protection."
-        />
-
+        <title>Website Under Construction</title>
+        <meta name="description" content="This website is currently under construction. Please check back later." />
       </Head>
-      <Banner />
+      <div className="text-center">
+        <h1 className="text-4xl font-bold text-gray-800 mb-4">Website Under Construction</h1>
+        <p className="text-lg text-gray-600">We are working hard to bring you a new and improved experience. Please check back soon!</p>
+      </div>
+    </div>
+  );
+};
 
-      <Header />
-
-
-      <main className="-z-50">
-        <Hero />
-        <WhyJonesCo />
-        <CTAA />
-        <OurServices />
-
-        <CTAB />
-        <ServiceLocations />
-        <CTAC />
-        <Subcontracting />
-        <CTAA />
-
-        <John />
-
-
-
-      </main>
-      <Footer />
-    </>
-  )
-}
+export default UnderConstruction;
