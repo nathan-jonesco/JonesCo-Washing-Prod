@@ -1,106 +1,75 @@
-const defaultTheme = require('tailwindcss/defaultTheme')
+const headlessuiPlugin = require('@headlessui/tailwindcss')
+const typographyPlugin = require('@tailwindcss/typography')
+
+const typographyStyles = require('./typography')
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['./src/**/*.{js,jsx}'],
+  content: ['./src/**/*.{js,mjs,jsx,ts,tsx,mdx}'],
+  darkMode: 'selector',
   theme: {
     fontSize: {
-      xs: ['0.75rem', { lineHeight: '1rem' }],
+      '2xs': ['0.75rem', { lineHeight: '1.25rem' }],
+      xs: ['0.8125rem', { lineHeight: '1.5rem' }],
       sm: ['0.875rem', { lineHeight: '1.5rem' }],
       base: ['1rem', { lineHeight: '1.75rem' }],
-      lg: ['1.125rem', { lineHeight: '2rem' }],
-      xl: ['1.25rem', { lineHeight: '2rem' }],
+      lg: ['1.125rem', { lineHeight: '1.75rem' }],
+      xl: ['1.25rem', { lineHeight: '1.75rem' }],
       '2xl': ['1.5rem', { lineHeight: '2rem' }],
-      '3xl': ['2rem', { lineHeight: '2.5rem' }],
-      '4xl': ['2.5rem', { lineHeight: '3.5rem' }],
-      '5xl': ['3rem', { lineHeight: '3.5rem' }],
+      '3xl': ['1.875rem', { lineHeight: '2.25rem' }],
+      '4xl': ['2.25rem', { lineHeight: '2.5rem' }],
+      '5xl': ['3rem', { lineHeight: '1' }],
       '6xl': ['3.75rem', { lineHeight: '1' }],
-      '7xl': ['4.5rem', { lineHeight: '1.1' }],
+      '7xl': ['4.5rem', { lineHeight: '1' }],
       '8xl': ['6rem', { lineHeight: '1' }],
       '9xl': ['8rem', { lineHeight: '1' }],
     },
-    colors: {
-      'JonesCo-Blue': {
-        50: '#ecfbff',
-        100: '#d4f4ff',
-        200: '#b2eeff',
-        300: '#7de7ff',
-        400: '#40d5ff',
-        500: '#14b7ff',
-        600: '#0098ff',
-        700: '#0080ff',
-        800: '#0066cc',
-        900: '#0857a0',
-        950: '#0a3561',
-    },
-    'JonesCo-Red': {
-      50: '#ffe6e8',
-      100: '#fcc5cf',
-      200: '#f9a8b5',
-      300: '#f78da7',
-      400: '#f47298',
-      500: '#C21807', // Your existing JonesCo-Red-500
-      600: '#ab150a',
-      700: '#94110d',
-      800: '#7d0c09',
-      900: '#660805',
-      950: '#4e0302',
-    },
-      'JonesCo-Orange': {
-        50: '#f0fdf1',
-        100: '#dcfcdf',
-        200: '#bbf7c1',
-        300: '#85f091',
-        400: '#49df5a',
-        500: '#23d237',
-        600: '#15a426',
-        700: '#148121',
-        800: '#166520',
-        900: '#14531d',
-        950: '#052e0c',
-    },
-    'JonesCo-Orange': { // Replaced 'JonesCo-Orange' with 'JonesCo-Orange'
-      50: '#fff5f2',  // Lightest orange
-      100: '#ffe9dd',
-      200: '#ffd6b8',
-      300: '#ffc28c',
-      400: '#ffab5a',
-      500: '#FF5C00', // Your base orange
-      600: '#e65000',
-      700: '#cc4300',
-      800: '#b33700',
-      900: '#992a00',
-      950: '#7f1e00',  // Darkest orange
-    },
-      'JC-tan': {
-        50: '#fff9eb',
-        100: '#ffecbc',
-        200: '#ffdd88',
-        300: '#ffc64a',
-        400: '#ffae20',
-        500: '#f98b07',
-        600: '#dd6502',
-        700: '#b74406',
-        800: '#94340c',
-        900: '#7a2b0d',
-        950: '#461402',
-      },
-      'white': '#ffffff',
-      'black': '#000000',
-    },
+    typography: typographyStyles,
     extend: {
-      borderRadius: {
-        '4xl': '2rem',
+      colors: {
+        blue: {
+          50: '#e3f2fd',
+          100: '#bbdefb',
+          200: '#90caf9',
+          300: '#64b5f6',
+          400: '#42a5f5',
+          500: '#2196f3',
+          600: '#1e88e5',
+          700: '#1976d2',
+          800: '#1565c0',
+          900: '#0d47a1',
+          950: '#0b3e91',
+        },
+        orange: {
+          50: '#fff3e0',
+          100: '#ffe0b2',
+          200: '#ffcc80',
+          300: '#ffb74d',
+          400: '#ffa726',
+          500: '#ff9800',
+          600: '#fb8c00',
+          700: '#f57c00',
+          800: '#ef6c00',
+          900: '#e65100',
+          950: '#cc4b00',
+        },
       },
-      fontFamily: {
-        sans: ['Inter', ...defaultTheme.fontFamily.sans],
-        display: ['Lexend', ...defaultTheme.fontFamily.sans],
-        jc: ['League Gothic', ...defaultTheme.fontFamily.sans]
+      boxShadow: {
+        glow: '0 0 4px rgb(0 0 0 / 0.1)',
       },
       maxWidth: {
+        lg: '33rem',
         '2xl': '40rem',
+        '3xl': '50rem',
+        '5xl': '66rem',
+      },
+      opacity: {
+        1: '0.01',
+        2.5: '0.025',
+        7.5: '0.075',
+        15: '0.15',
       },
     },
   },
-  plugins: [require('@tailwindcss/forms')],
+  plugins: [typographyPlugin, headlessuiPlugin],
 }

@@ -1,45 +1,74 @@
 import Link from 'next/link'
 import clsx from 'clsx'
 
-const baseStyles = {
-  solid:
-    'group inline-flex items-center justify-center rounded-full py-2 px-4 text-sm font-semibold focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2',
-  outline:
-    'group inline-flex ring-1 items-center justify-center rounded-full py-2 px-4 text-sm focus:outline-none',
+function ArrowIcon(props) {
+  return (
+    <svg viewBox="0 0 20 20" fill="none" aria-hidden="true" {...props}>
+      <path
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        d="m11.5 6.5 3 3.5m0 0-3 3.5m3-3.5h-9"
+      />
+    </svg>
+  )
 }
 
 const variantStyles = {
-  solid: {
-    slate:
-      'bg-slate-900 text-white hover:bg-slate-700 hover:text-slate-100 active:bg-slate-800 active:text-slate-300 focus-visible:outline-slate-900',
-    blue: 'bg-blue-600 text-white hover:text-slate-100 hover:bg-blue-500 active:bg-blue-800 active:text-blue-100 focus-visible:outline-blue-600',
-    white:
-      'bg-white text-slate-900 hover:bg-blue-50 active:bg-blue-200 active:text-slate-600 focus-visible:outline-white',
-  },
-  outline: {
-    slate:
-      'ring-slate-200 text-slate-700 hover:text-slate-900 hover:ring-slate-300 active:bg-slate-100 active:text-slate-600 focus-visible:outline-blue-600 focus-visible:ring-slate-300',
-    white:
-      'ring-slate-700 text-white hover:ring-slate-500 active:ring-slate-700 active:text-slate-400 focus-visible:outline-white',
-  },
+  primary:
+    'rounded-full bg-neutral-900 py-1 px-3 text-white hover:bg-neutral-700 dark:bg-orange-400/10 dark:text-orange-400 dark:ring-1 dark:ring-inset dark:ring-orange-400/20 dark:hover:bg-orange-400/10 dark:hover:text-orange-300 dark:hover:ring-orange-300',
+  secondary:
+    'rounded-full bg-neutral-100 py-1 px-3 text-neutral-900 hover:bg-neutral-200 dark:bg-neutral-800/40 dark:text-neutral-400 dark:ring-1 dark:ring-inset dark:ring-neutral-800 dark:hover:bg-neutral-800 dark:hover:text-neutral-300',
+  filled:
+    'rounded-full bg-neutral-900 py-1 px-3 text-white hover:bg-neutral-700 dark:bg-orange-500 dark:text-white dark:hover:bg-orange-400',
+  outline:
+    'rounded-full py-1 px-3 text-neutral-700 ring-1 ring-inset ring-neutral-900/10 hover:bg-neutral-900/2.5 hover:text-neutral-900 dark:text-neutral-400 dark:ring-white/10 dark:hover:bg-white/5 dark:hover:text-white',
+  text: 'text-orange-500 hover:text-orange-600 dark:text-orange-400 dark:hover:text-orange-500',
 }
 
 export function Button({
-  variant = 'solid',
-  color = 'slate',
+  variant = 'primary',
   className,
-  href,
+  children,
+  arrow,
   ...props
 }) {
   className = clsx(
-    baseStyles[variant],
-    variantStyles[variant][color],
-    className
+    'inline-flex gap-0.5 justify-center overflow-hidden text-sm font-medium transition',
+    variantStyles[variant],
+    className,
   )
 
-  return href ? (
-    <Link href={href} className={className} {...props} />
-  ) : (
-    <button className={className} {...props} />
+  let arrowIcon = (
+    <ArrowIcon
+      className={clsx(
+        'mt-0.5 h-5 w-5',
+        variant === 'text' && 'relative top-px',
+        arrow === 'left' && '-ml-1 rotate-180',
+        arrow === 'right' && '-mr-1',
+      )}
+    />
+  )
+
+  let inner = (
+    <>
+      {arrow === 'left' && arrowIcon}
+      {children}
+      {arrow === 'right' && arrowIcon}
+    </>
+  )
+
+  if (typeof props.href === 'undefined') {
+    return (
+      <button className={className} {...props}>
+        {inner}
+      </button>
+    )
+  }
+
+  return (
+    <Link className={className} {...props}>
+      {inner}
+    </Link>
   )
 }

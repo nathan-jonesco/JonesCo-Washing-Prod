@@ -1,0 +1,64 @@
+import Guides from '@/components/Guides';
+import Resources from '@/components/Resources';
+import HeroPattern from '@/components/HeroPattern';
+import Hero from '@/components/Hero';
+import Value from '@/components/Value';
+
+export const metadata = {
+  metadataBase: new URL('https://jonescowashing.com'),
+  title: 'JonesCo Window and Pressure Washing | Professional Cleaning Services',
+  description:
+    'Discover top-quality window and pressure washing services with JonesCo. Serving East Tennessee, we ensure a spotless finish every time. Schedule your service today!',
+  keywords: [
+    'window washing',
+    'pressure washing',
+    'soft washing',
+    'JonesCo Window and Pressure Washing',
+    'cleaning services East Tennessee',
+    'professional cleaning',
+    'residential pressure washing',
+    'commercial window washing',
+  ],
+  openGraph: {
+    title: 'JonesCo Window and Pressure Washing | Professional Cleaning Services',
+    description:
+      'Discover top-quality window and pressure washing services with JonesCo. Serving East Tennessee, we ensure a spotless finish every time. Schedule your service today!',
+    url: 'https://jonescowashing.com',
+    type: 'website',
+    images: [
+      {
+        url: '/images/Team/Maggie_Cleaning.webp',
+        width: 1200,
+        height: 630,
+        alt: 'Professional Window and Pressure Washing by JonesCo',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'JonesCo Window and Pressure Washing | Professional Cleaning Services',
+    description:
+      'Discover top-quality window and pressure washing services with JonesCo. Serving East Tennessee, we ensure a spotless finish every time. Schedule your service today!',
+    images: [
+      {
+        url: '/images/Team/Maggie_Cleaning.webp',
+        alt: 'Professional Window and Pressure Washing by JonesCo',
+      },
+    ],
+  },
+};
+
+export const sections = [
+  { title: 'Guides', id: 'guides' },
+  { title: 'Resources', id: 'resources' },
+];
+
+export default function HomePage() {
+  return (
+    <>
+      <div className="not-prose w-full custom-full-width element pt-14">
+        <Hero />
+      </div>
+    </>
+  );
+}

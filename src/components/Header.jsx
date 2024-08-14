@@ -1,97 +1,87 @@
-
-
-import { useState } from 'react';
-import { Dialog } from '@headlessui/react';
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
+import { forwardRef } from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
+import clsx from 'clsx';
+import { motion, useScroll, useTransform } from 'framer-motion';
 
-const navigation = [
-  { name: 'Services', href: '/services' },
-  { name: 'Locations', href: '/servicelocations' },
-  { name: 'Why', href: '/why' },
-  { name: 'About Us', href: '/about' },
-];
+import { Button } from '@/components/Button';
+import { Logo } from '@/components/Logo';
+import {
+  MobileNavigation,
+  useIsInsideMobileNavigation,
+} from '@/components/MobileNavigation';
+import { useMobileNavigationStore } from '@/components/MobileNavigation';
+import { MobileSearch, Search } from '@/components/Search';
+import { ThemeToggle } from '@/components/ThemeToggle';
 
-export default function Header() {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-
+function TopLevelNavItem({ href, children }) {
   return (
-    
-    <header className="bg-JonesCo-Orange-100 fixed top-0 left-0 right-0 z-50"> 
-      <nav className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 lg:px-8">
-        <Link href="/">
-          <Image
-            className="h-8 w-auto sm:h-10"  // Adjusted image size for better mobile responsiveness
-            src="/JC/JonesCo.webp"
-            alt="JonesCo Seamless Gutter Systems"
-            width={180}
-            height={40} // Use specific dimensions for the logo
-            priority 
-          />
-        </Link>
-        <div className="hidden lg:flex lg:gap-x-12">
-          {navigation.map((item) => (
-            <Link key={item.name} href={item.href} className="text-base font-bold tracking-wider uppercase text-JonesCo-Blue-900 hover:text-JonesCo-Blue-700">
-              {item.name}
-            </Link>
-          ))}
-        </div>
-        <div className="flex lg:hidden">
-          <button
-            type="button"
-            className="inline-flex items-center justify-center rounded-md p-2 text-JonesCo-Blue-900 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-JonesCo-Blue-500"
-            onClick={() => setMobileMenuOpen(true)}
-          >
-            <span className="sr-only">Open main menu</span>
-            <Bars3Icon className="block h-6 w-6" aria-hidden="true" />
-          </button>
-        </div>
-      </nav>
-
-      {/* Mobile Menu */}
-      <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
-        <div className="fixed inset-0 z-10" />
-        <Dialog.Panel className="fixed inset-y-0 right-0 z-20 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
-        <div className="flex items-center justify-between">
-            <Link href="/" className="-m-1.5 p-1.5">
-              <span className="sr-only">Your Company</span>
-
-              <Image
-                className="h-10 w-auto"
-                width={500}
-                height={500}
-                quality={50}
-                src="/JC/JonesCo.webp"
-                alt=""
-              />
-
-            </Link>
-            <button
-              type="button"
-              className="-m-2.5 rounded-md p-2.5 text-black"
-              onClick={() => setMobileMenuOpen(false)}
-            >
-              <span className="sr-only">Close menu</span>
-              <XMarkIcon className="h-6 w-6" aria-hidden="true" />
-            </button>
-          </div>
-          <div className="mt-6 flow-root">
-            <div className="-my-6 divide-y divide-JonesCo-Orange-900">
-              <div className="space-y-2 py-6">
-                {navigation.map((item) => (
-                  <a
-                    key={item.name}
-                    href={item.href}
-                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-JonesCo-Blue-900 hover:bg-JonesCo-Blue-50"
-                  >
-                    {item.name}
-                  </a>
-                ))}
-              </div>
-            </div>
-          </div>        </Dialog.Panel>
-      </Dialog>
-    </header>
+    <li>
+      <Link
+        href={href}
+        className="text-sm leading-5 text-neutral-600 transition hover:text-blue-600 dark:text-neutral-400 dark:hover:text-orange-400"
+      >
+        {children}
+      </Link>
+    </li>
   );
 }
+
+export const Header = forwardRef(function Header({ className, ...props }, ref) {
+  let { isOpen: mobileNavIsOpen } = useMobileNavigationStore();
+  let isInsideMobileNavigation = useIsInsideMobileNavigation();
+
+  let { scrollY } = useScroll();
+  let bgOpacityLight = useTransform(scrollY, [0, 72], [0.5, 0.9]);
+  let bgOpacityDark = useTransform(scrollY, [0, 72], [0.2, 0.8]);
+
+  return (
+    <motion.div
+      {...props}
+      ref={ref}
+      className={clsx(
+        className,
+        'fixed inset-x-0 top-0 z-50 flex h-14 items-center justify-between gap-12 px-4 transition sm:px-6 lg:left-72 lg:z-30 lg:px-8 xl:left-80',
+        !isInsideMobileNavigation &&
+          'backdrop-blur-sm lg:left-72 xl:left-80 dark:backdrop-blur',
+        isInsideMobileNavigation
+          ? 'bg-white dark:bg-neutral-900'
+          : 'bg-white/[var(--bg-opacity-light)] dark:bg-neutral-900/[var(--bg-opacity-dark)]',
+      )}
+      style={{
+        '--bg-opacity-light': bgOpacityLight,
+        '--bg-opacity-dark': bgOpacityDark,
+      }}
+    >
+      <div
+        className={clsx(
+          'absolute inset-x-0 top-full h-px transition',
+          (isInsideMobileNavigation || !mobileNavIsOpen) &&
+            'bg-neutral-900/7.5 dark:bg-white/7.5',
+        )}
+      />
+      <Search />
+      <div className="flex items-center gap-5 lg:hidden">
+        <MobileNavigation />
+        <Link href="/" aria-label="Home">
+          <Logo className="h-8 pt-1" />
+        </Link>
+      </div>
+      <div className="flex items-center gap-5">
+        <nav className="hidden md:block">
+          <ul role="list" className="flex items-center gap-8">
+            <TopLevelNavItem href="tel:423.207.2734">423.207.2734⁩</TopLevelNavItem>
+            <TopLevelNavItem href="mailto:hey@jonescowashing.com">hey@jonescowashing.com</TopLevelNavItem>
+          </ul>
+        </nav>
+        <div className="hidden md:block md:h-5 md:w-px md:bg-neutral-900/10 md:dark:bg-white/15" />
+        <div className="flex gap-4">
+          <MobileSearch />
+          <ThemeToggle />
+        </div>
+        <div className="hidden min-[416px]:contents">
+          <Button href="https://clienthub.getjobber.com/client_hubs/1b0129bf-9730-46bf-9d7c-a34501f74690/login/new?source=share_login">Sign In</Button>
+        </div>
+      </div>
+    </motion.div>
+  );
+});
