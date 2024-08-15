@@ -218,7 +218,7 @@ export const navigation = [
     title: 'Contact',
     links: [
       { title: 'Contact Us', href: '/contact' },
-      { title: 'Request a Quote', href: '/request-quote' },
+      { title: 'Request a Quote', href: '/estimate' },
     ],
   },
   {

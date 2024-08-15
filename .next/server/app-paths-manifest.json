@@ -1,7 +1,8 @@
 {
-  "/services/soft-washing/page": "app/services/soft-washing/page.js",
+  "/counties/cocke/page": "app/counties/cocke/page.js",
+  "/services/window-washing/page": "app/services/window-washing/page.js",
   "/page": "app/page.js",
-  "/contact/page": "app/contact/page.js",
+  "/careers/page": "app/careers/page.js",
   "/about/page": "app/about/page.js",
-  "/testimonials/page": "app/testimonials/page.js"
+  "/estimate/page": "app/estimate/page.js"
 }
