@@ -44,8 +44,8 @@ export const Header = forwardRef(function Header({ className, ...props }, ref) {
         !isInsideMobileNavigation &&
           'backdrop-blur-sm lg:left-72 xl:left-80 dark:backdrop-blur',
         isInsideMobileNavigation
-          ? 'bg-white dark:bg-neutral-900'
-          : 'bg-white/[var(--bg-opacity-light)] dark:bg-neutral-900/[var(--bg-opacity-dark)]',
+          ? 'bg-orange-50 dark:bg-orange-900'
+          : 'bg-orange-50/[var(--bg-opacity-light)] dark:bg-neutral-700/[var(--bg-opacity-dark)]',
       )}
       style={{
         '--bg-opacity-light': bgOpacityLight,

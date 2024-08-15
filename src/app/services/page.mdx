@@ -1,43 +1,95 @@
-import { Guides } from '@/components/Guides'
-import { Resources } from '@/components/Resources'
-import { HeroPattern } from '@/components/HeroPattern'
+import Hero from '@/components/Hero';
 
 export const metadata = {
-  title: 'API Documentation',
-  description:
-    'Learn everything there is to know about the Protocol API and integrate Protocol into your product.',
-}
+  title: 'Our Services | JonesCo Window and Pressure Washing',
+  description: 'Explore the wide range of services offered by JonesCo Window and Pressure Washing, including window cleaning, pressure washing, soft washing, gutter cleaning, and more. Find out when each service is recommended and how we can help maintain the beauty and longevity of your property.',
+  keywords: [
+    'window cleaning services',
+    'pressure washing services',
+    'soft washing services',
+    'gutter cleaning services',
+    'house washing services',
+    'deck cleaning services',
+    'JonesCo Window and Pressure Washing',
+    'property maintenance',
+  ],
+  openGraph: {
+    title: 'Our Services | JonesCo Window and Pressure Washing',
+    description: 'Explore the wide range of services offered by JonesCo Window and Pressure Washing, including window cleaning, pressure washing, soft washing, gutter cleaning, and more. Find out when each service is recommended and how we can help maintain the beauty and longevity of your property.',
+    url: 'https://jonescowashing.com',
+    type: 'website',
+    images: [
+      {
+        url: '/images/Team/Maggie_Cleaning.webp',
+        width: 1200,
+        height: 630,
+        alt: 'JonesCo Window and Pressure Washing services',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Our Services | JonesCo Window and Pressure Washing',
+    description: 'Explore the wide range of services offered by JonesCo Window and Pressure Washing, including window cleaning, pressure washing, soft washing, gutter cleaning, and more. Find out when each service is recommended and how we can help maintain the beauty and longevity of your property.',
+    images: [
+      {
+        url: '/images/Team/Maggie_Cleaning.webp',
+        alt: 'JonesCo Window and Pressure Washing services',
+      },
+    ],
+  },
+};
 
-export const sections = [
-  { title: 'Guides', id: 'guides' },
-  { title: 'Resources', id: 'resources' },
-]
+# Our Services
 
-<HeroPattern />
+At **JonesCo Window and Pressure Washing**, we offer a comprehensive range of services designed to keep your property looking its best. Whether you need to brighten up your windows, refresh your deck, or protect your home’s exterior, our professional team is here to help.
 
-# API Documentation
+## Window Cleaning
 
-Use the Protocol API to access contacts, conversations, group messages, and more and seamlessly integrate your product into the workflows of dozens of devoted Protocol users. {{ className: 'lead' }}
+Clean windows not only enhance the appearance of your home or business but also improve indoor air quality and extend the lifespan of your windows. Regular window cleaning is recommended to remove dirt, grime, and hard water stains that can damage your glass over time.
 
-<div className="not-prose mb-16 mt-6 flex gap-3">
-  <Button href="/quickstart" arrow="right">
-    <>Quickstart</>
-  </Button>
-  <Button href="/sdks" variant="outline">
-    <>Explore SDKs</>
-  </Button>
-</div>
+[Learn more about our Window Cleaning services](/services/window-washing)
 
-## Getting started {{ anchor: false }}
+## Pressure Washing
 
-To get started, create a new application in your [developer settings](#), then read about how to make requests for the resources you need to access using our HTTP APIs or dedicated client SDKs. When your integration is ready to go live, publish it to our [integrations directory](#) to reach the Protocol community. {{ className: 'lead' }}
+Pressure washing is ideal for removing stubborn dirt, mold, and stains from various surfaces around your property. It’s perfect for driveways, walkways, patios, and other hard surfaces that need a powerful clean to restore their original look.
 
-<div className="not-prose">
-  <Button href="/sdks" variant="text" arrow="right">
-    <>Get your API key</>
-  </Button>
-</div>
+[Learn more about our Pressure Washing services](/services/pressure-washing)
 
-<Guides />
+## Soft Washing
 
-<Resources />
+For more delicate surfaces, such as your home’s exterior or roof, soft washing provides a gentle yet effective clean. This method uses low-pressure water combined with eco-friendly cleaning solutions to remove dirt, algae, and mildew without damaging your surfaces.
+
+[Learn more about our Soft Washing services](/services/soft-washing)
+
+## Gutter Cleaning
+
+Clogged gutters can lead to water damage, roof leaks, and other costly issues. Regular gutter cleaning is essential to ensure that water flows freely away from your home, protecting your roof, walls, and foundation from damage.
+
+[Learn more about our Gutter Cleaning services](/services/gutter-cleaning)
+
+## House Washing
+
+Your home’s exterior is constantly exposed to the elements, leading to the buildup of dirt, grime, and algae. House washing helps maintain your home’s appearance and prevents damage by removing these harmful substances.
+
+[Learn more about our House Washing services](/services/house-washing)
+
+## Deck Cleaning
+
+Your deck is a valuable part of your outdoor space, but it can become dirty, slippery, and unsafe over time. Professional deck cleaning removes dirt, mold, and mildew, restoring your deck’s beauty and making it a safer place to enjoy.
+
+[Learn more about our Deck Cleaning services](/services/deck-cleaning)
+
+## Driveway Cleaning
+
+Driveways can accumulate oil stains, tire marks, and dirt over time, detracting from your home’s curb appeal. Driveway cleaning uses high-pressure washing to remove these tough stains, leaving your driveway looking clean and inviting.
+
+[Learn more about our Driveway Cleaning services](/services/driveway-cleaning)
+
+## Why Choose JonesCo Window and Pressure Washing?
+
+At **JonesCo Window and Pressure Washing**, we are committed to providing top-quality services that keep your property in excellent condition. Our experienced team uses state-of-the-art equipment and eco-friendly products to deliver outstanding results every time.
+
+Contact us today to schedule your service or to learn more about how we can help maintain the beauty and longevity of your property.
+
+[Get in touch with us today](/contact)

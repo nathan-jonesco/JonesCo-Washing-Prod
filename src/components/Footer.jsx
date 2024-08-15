@@ -27,7 +27,7 @@ const pageLinks = [
 const servicesLinks = [
   { name: 'Window Washing', href: '/window-washing' },
   { name: 'Pressure Washing', href: '/pressure-washing' },
-  { name: 'Soft Chemical Washing', href: '/soft-chemical-washing' },
+  { name: 'Soft Washing', href: '/soft-washing' },
   { name: 'Gutter Cleaning', href: '/gutter-cleaning' },
   { name: 'Custom Washing Solutions', href: '/custom-washing-solutions' },
   { name: 'Downspouts', href: '/downspouts' },

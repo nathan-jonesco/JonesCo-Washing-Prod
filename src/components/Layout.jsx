@@ -3,8 +3,9 @@
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { motion } from 'framer-motion'
+import Hero from '@/components/Hero';
 
-import  Footer  from '@/components/Footer'
+import Footer from '@/components/Footer'
 import { Header } from '@/components/Header'
 import { Logo } from '@/components/Logo'
 import { Navigation } from '@/components/Navigation'
@@ -30,8 +31,9 @@ export function Layout({ children, allSections }) {
             <Navigation className="hidden lg:mt-10 lg:block" />
           </div>
         </motion.header>
-        <div className="relative flex h-full flex-col custom-full-width element ">
-          <main className="flex-auto">{children}</main>
+        <div className="custom-full-width element relative flex h-full flex-col">
+          <main className="flex-auto pt-14">{children}</main>
+          <Hero className="not-prose custom-full-width element w-full pt-14" />
           <Footer />
         </div>
       </div>

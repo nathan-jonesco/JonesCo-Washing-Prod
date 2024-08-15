@@ -197,8 +197,7 @@ export const navigation = [
     links: [
       { title: 'Window Washing', href: '/services/window-washing' },
       { title: 'Pressure Washing', href: '/services/pressure-washing' },
-      { title: 'Soft Chemical Washing', href: '/services/soft-chemical-washing' },
-      { title: 'Roof Cleaning', href: '/services/roof-cleaning' },
+      { title: 'Soft Washing', href: '/services/soft-washing' },
       { title: 'Driveway Cleaning', href: '/services/driveway-cleaning' },
       { title: 'Gutter Cleaning', href: '/services/gutter-cleaning' },
       { title: 'House Washing', href: '/services/house-washing' },
@@ -212,6 +211,7 @@ export const navigation = [
       { title: 'Testimonials', href: '/testimonials' },
       { title: 'Gallery', href: '/gallery' },
       { title: 'Careers', href: '/careers' },
+      { title: 'Warranty', href: '/warranty' },
     ],
   },
   {
