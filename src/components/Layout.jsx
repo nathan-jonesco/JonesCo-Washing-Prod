@@ -32,7 +32,7 @@ export function Layout({ children, allSections }) {
           </div>
         </motion.header>
         <div className="custom-full-width element relative flex h-full flex-col">
-          <main className="flex-auto pt-14">{children}</main>
+          <main className="flex-auto pt-10 px-8 md:px-0">{children}</main>
           <Hero className="not-prose custom-full-width element w-full pt-14" />
           <Footer />
         </div>

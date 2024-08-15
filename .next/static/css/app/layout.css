@@ -3199,6 +3199,11 @@ video {
     padding-bottom: 8rem;
   }
 
+  .md\:px-0 {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
   .md\:text-center {
     text-align: center;
   }
