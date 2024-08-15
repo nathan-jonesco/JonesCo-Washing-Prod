@@ -90,6 +90,10 @@ var map = {
 	"./services/window-washing/page.mdx": [
 		"(rsc)/./src/app/services/window-washing/page.mdx",
 		"_rsc_src_app_services_window-washing_page_mdx"
+	],
+	"./testimonials/page.mdx": [
+		"(rsc)/./src/app/testimonials/page.mdx",
+		"_rsc_src_app_testimonials_page_mdx"
 	]
 };
 function webpackAsyncContext(req) {
