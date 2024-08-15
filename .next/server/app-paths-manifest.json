@@ -1,7 +1,7 @@
 {
   "/services/soft-washing/page": "app/services/soft-washing/page.js",
-  "/contact/page": "app/contact/page.js",
-  "/testimonials/page": "app/testimonials/page.js",
   "/page": "app/page.js",
-  "/about/page": "app/about/page.js"
+  "/contact/page": "app/contact/page.js",
+  "/about/page": "app/about/page.js",
+  "/testimonials/page": "app/testimonials/page.js"
 }
