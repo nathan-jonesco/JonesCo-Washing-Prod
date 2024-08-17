@@ -45,7 +45,7 @@ export const Header = forwardRef(function Header({ className, ...props }, ref) {
           'backdrop-blur-sm lg:left-72 xl:left-80 dark:backdrop-blur',
         isInsideMobileNavigation
           ? 'bg-orange-50 dark:bg-orange-100'
-          : 'bg-orange-50 dark:bg-neutral-100',
+          : 'bg-orange-50 dark:bg-white md:dark:bg-neutral-800',
       )}
       style={{
         '--bg-opacity-light': bgOpacityLight,
@@ -63,7 +63,7 @@ export const Header = forwardRef(function Header({ className, ...props }, ref) {
       <div className="flex items-center gap-5 lg:hidden">
         <MobileNavigation />
         <Link href="/" aria-label="Home">
-          <Logo className="h-8 pt-1" />
+          <Logo className="h-10 pt-1" />
         </Link>
       </div>
       <div className="flex items-center gap-5">
