@@ -1,9 +1,7 @@
 {
-  "/warranty/page": "app/warranty/page.js",
-  "/services/soft-washing/page": "app/services/soft-washing/page.js",
-  "/services/gutter-cleaning/page": "app/services/gutter-cleaning/page.js",
-  "/services/driveway-cleaning/page": "app/services/driveway-cleaning/page.js",
   "/page": "app/page.js",
+  "/services/gutter-cleaning/page": "app/services/gutter-cleaning/page.js",
   "/services/window-washing/page": "app/services/window-washing/page.js",
-  "/services/pressure-washing/page": "app/services/pressure-washing/page.js"
+  "/warranty/page": "app/warranty/page.js",
+  "/services/soft-washing/page": "app/services/soft-washing/page.js"
 }
