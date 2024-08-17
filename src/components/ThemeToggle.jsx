@@ -38,7 +38,7 @@ export function ThemeToggle() {
       onClick={() => setTheme(otherTheme)}
     >
       <SunIcon className="h-5 w-5 stroke-neutral-900 dark:hidden" />
-      <MoonIcon className="hidden h-5 w-5 stroke-white dark:block" />
+      <MoonIcon className="hidden h-5 w-5 stroke-orange-600 dark:block" />
     </button>
   )
 }

@@ -17,29 +17,23 @@ const pageLinks = [
   { name: 'About', href: '/about' },
   { name: 'Contact', href: '/contact' },
   { name: 'Careers', href: '/careers' },
-  { name: 'Subcontracting', href: '/subcontracting' },
-  { name: 'Service Locations', href: '/servicelocations' },
+  { name: 'Service Locations', href: '/counties' },
   { name: 'Privacy Policy', href: '/privacy' },
   { name: 'Terms & Conditions', href: '/termsandconditions' },
   { name: 'Warranty', href: '/warranty' },
 ];
 
 const servicesLinks = [
-  { name: 'Window Washing', href: '/window-washing' },
-  { name: 'Pressure Washing', href: '/pressure-washing' },
-  { name: 'Soft Washing', href: '/soft-washing' },
-  { name: 'Gutter Cleaning', href: '/gutter-cleaning' },
-  { name: 'Custom Washing Solutions', href: '/custom-washing-solutions' },
-  { name: 'Downspouts', href: '/downspouts' },
-  { name: 'Snow Guards', href: '/snow-guards' },
-  { name: 'Rain Chains', href: '/rain-chains' },
+  { name: 'Window Washing', href: '/services/window-washing' },
+  { name: 'Pressure Washing', href: '/services/pressure-washing' },
+  { name: 'Soft Washing', href: '/services/soft-washing' },
+  { name: 'Gutter Cleaning', href: '/services/gutter-cleaning' },
+  { name: 'House Washing', href: '/services/house-washing' },
+  { name: 'Driveway Cleaning', href: '/services/driveway-cleaning' },
+  { name: 'Deck Cleaning', href: '/services/deck-cleaning' },
 ];
 
-const stylesLinks = [
-  { name: 'Residential Services', href: '/residential-services' },
-  { name: 'Commercial Services', href: '/commercial-services' },
-  { name: 'Industrial Services', href: '/industrial-services' },
-];
+
 
 function FooterSection({ title, links }) {
   return (
@@ -107,20 +101,7 @@ export default function Footer() {
                 ))}
               </ul>
             </div>
-            <div>
-              <h3 className="text-lg font-semibold text-neutral-900 dark:text-neutral-200">Styles</h3>
-              <ul className="mt-4 space-y-2">
-                {stylesLinks.map((link) => (
-                  <li key={link.name}>
-                    <Link href={link.href} legacyBehavior>
-                      <a className="text-sm text-neutral-600 hover:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-200">
-                        {link.name}
-                      </a>
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
+            
             <div>
               <h3 className="text-lg font-semibold text-neutral-900 dark:text-neutral-200">Social Media</h3>
               <ul className="mt-4 space-y-2">
@@ -139,7 +120,6 @@ export default function Footer() {
           <div className="md:hidden">
             <FooterSection title="Quick Links" links={pageLinks} />
             <FooterSection title="Services" links={servicesLinks} />
-            <FooterSection title="Styles" links={stylesLinks} />
             <FooterSection title="Social Media" links={socialMediaLinks} />
           </div>
         </div>

@@ -44,8 +44,8 @@ export const Header = forwardRef(function Header({ className, ...props }, ref) {
         !isInsideMobileNavigation &&
           'backdrop-blur-sm lg:left-72 xl:left-80 dark:backdrop-blur',
         isInsideMobileNavigation
-          ? 'bg-orange-50 dark:bg-orange-900'
-          : 'bg-orange-50/[var(--bg-opacity-light)] dark:bg-neutral-700/[var(--bg-opacity-dark)]',
+          ? 'bg-orange-50 dark:bg-neutral-200'
+          : 'bg-orange-50 ',
       )}
       style={{
         '--bg-opacity-light': bgOpacityLight,
@@ -56,7 +56,7 @@ export const Header = forwardRef(function Header({ className, ...props }, ref) {
         className={clsx(
           'absolute inset-x-0 top-full h-px transition',
           (isInsideMobileNavigation || !mobileNavIsOpen) &&
-            'bg-neutral-900/7.5 dark:bg-white/7.5',
+            'bg-neutral-900/7.5 dark:bg-orange-600/7.5',
         )}
       />
       <Search />
@@ -73,7 +73,7 @@ export const Header = forwardRef(function Header({ className, ...props }, ref) {
             <TopLevelNavItem href="mailto:hey@jonescowashing.com">hey@jonescowashing.com</TopLevelNavItem>
           </ul>
         </nav>
-        <div className="hidden md:block md:h-5 md:w-px md:bg-neutral-900/10 md:dark:bg-white/15" />
+        <div className="hidden md:block md:h-5 md:w-px md:bg-neutral-900/10 md:dark:bg-orange-600/15" />
         <div className="flex gap-4">
           <MobileSearch />
           <ThemeToggle />

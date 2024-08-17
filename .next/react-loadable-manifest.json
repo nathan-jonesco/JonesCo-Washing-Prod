@@ -1,14 +1,14 @@
 {
   "components/Hero.jsx -> @react-google-maps/api": {
-    "id": 7744,
+    "id": "components/Hero.jsx -> @react-google-maps/api",
     "files": [
-      "static/chunks/4e6af11a.2d5c4c748418f9d8.js"
+      "static/chunks/_app-pages-browser_node_modules_react-google-maps_api_dist_esm_js.js"
     ]
   },
   "components/Search.jsx -> @/mdx/search.mjs": {
-    "id": 4584,
+    "id": "components/Search.jsx -> @/mdx/search.mjs",
     "files": [
-      "static/chunks/584.ec7066d7c4ef12f5.js"
+      "static/chunks/_app-pages-browser_src_mdx_search_mjs.js"
     ]
   }
 }

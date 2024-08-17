@@ -89,7 +89,7 @@ function VisibleSectionHighlight({ group, pathname }) {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1, transition: { delay: 0.2 } }}
       exit={{ opacity: 0 }}
-      className="absolute inset-x-0 top-0 bg-neutral-800/2.5 will-change-transform dark:bg-white/2.5"
+      className="absolute inset-x-0 top-0 bg-neutral-800/2.5 will-change-transform "
       style={{ borderRadius: 8, height, top }}
     />
   )
@@ -142,7 +142,7 @@ function NavigationGroup({ group, className }) {
         </AnimatePresence>
         <motion.div
           layout
-          className="absolute inset-y-0 left-2 w-px bg-neutral-900/10 dark:bg-white/5"
+          className="absolute inset-y-0 left-2 w-px bg-neutral-900/10 "
         />
         <AnimatePresence initial={false}>
           {isActiveGroup && (
