@@ -203,7 +203,7 @@ const Hero = () => {
                     value={formData.name}
                     onChange={handleChange}
                     required
-                    className="block mt-1 w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                    className="block mt-1 w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm text-blue-950 bg-blue-50"
                   />
                 </div>
                 <div>
@@ -218,7 +218,7 @@ const Hero = () => {
                     value={formData.email}
                     onChange={handleChange}
                     required
-                    className="block mt-1 w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                    className="block mt-1 w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm text-blue-950 bg-blue-50"
                   />
                 </div>
                 <div>
@@ -233,7 +233,7 @@ const Hero = () => {
                     value={formData.phone}
                     onChange={handleChange}
                     required
-                    className="block mt-1 w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                    className="block mt-1 w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm text-blue-950 bg-blue-50"
                   />
                 </div>
                 <div>
@@ -260,7 +260,7 @@ const Hero = () => {
                         value={formData.address}
                         onChange={handleChange}
                         required
-                        className="block mt-1 w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                        className="block mt-1 w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm text-blue-950 bg-blue-50"
                       />
                     </Autocomplete>
                   </LoadScript>

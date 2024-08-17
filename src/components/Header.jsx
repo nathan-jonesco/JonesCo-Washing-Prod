@@ -18,7 +18,7 @@ function TopLevelNavItem({ href, children }) {
     <li>
       <Link
         href={href}
-        className="text-sm leading-5 text-neutral-600 transition hover:text-blue-600 dark:text-neutral-50 dark:hover:text-orange-100"
+        className="text-sm leading-5 text-neutral-600 transition hover:text-orange-700 dark:text-neutral-50 dark:hover:text-orange-100"
       >
         {children}
       </Link>
