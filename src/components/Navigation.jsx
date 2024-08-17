@@ -19,10 +19,10 @@ function useInitialValue(value, condition = true) {
 
 function TopLevelNavItem({ href, children }) {
   return (
-    <li className="md:hidden">
+    <li className="md:hidden ">
       <Link
         href={href}
-        className="block py-1 text-sm text-neutral-600 transition hover:text-neutral-900 dark:text-neutral-400 dark:hover:text-white"
+        className="block py-1 text-sm text-neutral-600 transition hover:text-neutral-900  "
       >
         {children}
       </Link>
@@ -45,8 +45,8 @@ function NavLink({
         'flex justify-between gap-2 py-1 pr-3 text-sm transition',
         isAnchorLink ? 'pl-7' : 'pl-4',
         active
-          ? 'text-neutral-900 dark:text-white'
-          : 'text-neutral-600 hover:text-neutral-900 dark:text-neutral-400 dark:hover:text-white',
+          ? 'text-neutral-900 '
+          : 'text-neutral-600 hover:text-neutral-900 ',
       )}
     >
       <span className="truncate">{children}</span>
@@ -130,7 +130,7 @@ function NavigationGroup({ group, className }) {
     <li className={clsx('relative mt-6', className)}>
       <motion.h2
         layout="position"
-        className="text-xs font-semibold text-neutral-900 dark:text-white"
+        className="text-xs font-semibold text-neutral-900  "
       >
         {group.title}
       </motion.h2>

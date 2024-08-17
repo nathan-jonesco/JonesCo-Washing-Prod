@@ -24,7 +24,7 @@ export function Layout({ children, allSections }) {
           <div className="contents lg:pointer-events-auto lg:block lg:w-72 lg:overflow-y-auto lg:border-r lg:border-neutral-900/10 lg:px-6 lg:pb-8 lg:pt-4 xl:w-80 lg:dark:border-white/10">
             <div className="hidden lg:flex">
               <Link href="/" aria-label="Home">
-                <Logo className="h-6" />
+                <Logo className="h-10" />
               </Link>
             </div>
             <Header />
@@ -32,7 +32,7 @@ export function Layout({ children, allSections }) {
           </div>
         </motion.header>
         <div className="custom-full-width element relative flex h-full flex-col">
-          <main className="flex-auto pt-10 px-8 md:px-0">{children}</main>
+          <main className="flex-auto pt-10 px-8 md:px-0 bg-white dark:bg-neutral-900">{children}</main>
           <Hero className="not-prose custom-full-width element w-full pt-14" />
           <Footer />
         </div>

@@ -18,7 +18,7 @@ function TopLevelNavItem({ href, children }) {
     <li>
       <Link
         href={href}
-        className="text-sm leading-5 text-neutral-600 transition hover:text-blue-600 dark:text-neutral-400 dark:hover:text-orange-400"
+        className="text-sm leading-5 text-neutral-600 transition hover:text-blue-600 dark:text-neutral-50 dark:hover:text-orange-100"
       >
         {children}
       </Link>
@@ -44,8 +44,8 @@ export const Header = forwardRef(function Header({ className, ...props }, ref) {
         !isInsideMobileNavigation &&
           'backdrop-blur-sm lg:left-72 xl:left-80 dark:backdrop-blur',
         isInsideMobileNavigation
-          ? 'bg-orange-50 dark:bg-neutral-200'
-          : 'bg-orange-50 ',
+          ? 'bg-orange-50 dark:bg-orange-100'
+          : 'bg-orange-50 dark:bg-neutral-100',
       )}
       style={{
         '--bg-opacity-light': bgOpacityLight,
