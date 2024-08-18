@@ -3,7 +3,8 @@
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { motion } from 'framer-motion'
-import Hero from '@/components/Hero';
+import Hero from '@/components/Hero'
+import Incentives from '@/components/Incentives'
 
 import Footer from '@/components/Footer'
 import { Header } from '@/components/Header'
@@ -32,7 +33,10 @@ export function Layout({ children, allSections }) {
           </div>
         </motion.header>
         <div className="custom-full-width element relative flex h-full flex-col">
-          <main className="flex-auto pt-10 px-8 md:px-0 bg-white dark:bg-neutral-900">{children}</main>
+          <main className="flex-auto bg-white px-8 pt-10 md:px-0 dark:bg-neutral-900">
+            {children}
+          </main>
+          <Incentives className="not-prose custom-full-width element w-full pt-14" />
           <Hero className="not-prose custom-full-width element w-full pt-14" />
           <Footer />
         </div>

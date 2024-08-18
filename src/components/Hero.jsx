@@ -183,98 +183,99 @@ const Hero = () => {
             </div>
           )}
           <div>
-            <h2 className="mb-4 text-2xl font-black tracking-tight text-center text-blue-950 sm:text-3xl">
-              Request a Free Estimate
-            </h2>
-            <p className="mb-4 text-center text-gray-700">
-              Complete this form, we'll do the rest!
-            </p>
-            <form onSubmit={handleSubmit}>
-              <div className="grid grid-cols-1 gap-6">
-                <div>
-                  <label htmlFor="name" className="block text-sm font-medium text-gray-700">
-                    Name *
-                  </label>
-                  <input
-                    type="text"
-                    name="name"
-                    id="name"
-                    autoComplete="name"
-                    value={formData.name}
-                    onChange={handleChange}
-                    required
-                    className="block mt-1 w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm text-blue-950 bg-blue-50"
-                  />
-                </div>
-                <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-gray-700">
-                    Email *
-                  </label>
-                  <input
-                    type="email"
-                    name="email"
-                    id="email"
-                    autoComplete="email"
-                    value={formData.email}
-                    onChange={handleChange}
-                    required
-                    className="block mt-1 w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm text-blue-950 bg-blue-50"
-                  />
-                </div>
-                <div>
-                  <label htmlFor="phone" className="block text-sm font-medium text-gray-700">
-                    Phone *
-                  </label>
-                  <input
-                    type="tel"
-                    name="phone"
-                    id="phone"
-                    autoComplete="tel"
-                    value={formData.phone}
-                    onChange={handleChange}
-                    required
-                    className="block mt-1 w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm text-blue-950 bg-blue-50"
-                  />
-                </div>
-                <div>
-                  <label htmlFor="address" className="block text-sm font-medium text-gray-700">
-                    Address *
-                  </label>
-                  <LoadScript
-                    googleMapsApiKey="AIzaSyAgGO-4UJ1-wS6aua__cpo1uVcefrlPaGg"
-                    libraries={libraries}
-                    loadingElement={<div>Loading...</div>}
-                    id="script-loader"
-                    async
-                    defer
-                  >
-                    <Autocomplete
-                      onLoad={(ref) => (autocompleteRef.current = ref)}
-                      onPlaceChanged={onPlaceChanged}
-                    >
-                      <input
-                        type="text"
-                        name="address"
-                        id="address"
-                        autoComplete="address-line1"
-                        value={formData.address}
-                        onChange={handleChange}
-                        required
-                        className="block mt-1 w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm text-blue-950 bg-blue-50"
-                      />
-                    </Autocomplete>
-                  </LoadScript>
-                </div>
-              </div>
-              <div className="mt-6 text-center">
-                <button
-                  type="submit"
-                  className="inline-flex justify-center items-center px-6 py-3 w-full text-base font-medium text-white rounded-md border border-transparent shadow-sm bg-orange-600 hover:bg-blue-700"
-                >
-                  Submit Request
-                </button>
-              </div>
-            </form>
+  <h2 className="mb-4 text-2xl font-black tracking-tight text-center text-blue-950 sm:text-3xl">
+    Request a Free Estimate
+  </h2>
+  <p className="mb-4 text-center text-gray-700">
+    Complete this form, we'll do the rest!
+  </p>
+  <form onSubmit={handleSubmit}>
+  <div className="grid grid-cols-1 gap-6">
+    <div>
+      <label htmlFor="fullName" className="block text-sm font-medium text-gray-700">
+        Full Name <span aria-hidden="true">*</span>
+      </label>
+      <input
+        type="text"
+        name="fullName"
+        id="fullName"
+        autoComplete="name"
+        value={formData.fullName}
+        onChange={handleChange}
+        required
+        className="block mt-1 w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm text-blue-950 bg-neutral-50"
+      />
+    </div>
+    <div>
+      <label htmlFor="email" className="block text-sm font-medium text-gray-700">
+        Email Address <span aria-hidden="true">*</span>
+      </label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        autoComplete="email"
+        value={formData.email}
+        onChange={handleChange}
+        required
+        className="block mt-1 w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm text-blue-950 bg-neutral-50"
+      />
+    </div>
+    <div>
+      <label htmlFor="phone" className="block text-sm font-medium text-gray-700">
+        Phone Number <span aria-hidden="true">*</span>
+      </label>
+      <input
+        type="tel"
+        name="phone"
+        id="phone"
+        autoComplete="tel"
+        value={formData.phone}
+        onChange={handleChange}
+        required
+        className="block mt-1 w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm text-blue-950 bg-neutral-50"
+      />
+    </div>
+    <div>
+      <label htmlFor="address" className="block text-sm font-medium text-gray-700">
+        Street Address <span aria-hidden="true">*</span>
+      </label>
+      <LoadScript
+        googleMapsApiKey="AIzaSyAgGO-4UJ1-wS6aua__cpo1uVcefrlPaGg"
+        libraries={libraries}
+        loadingElement={<div>Loading...</div>}
+        id="script-loader"
+        async
+        defer
+      >
+        <Autocomplete
+          onLoad={(ref) => (autocompleteRef.current = ref)}
+          onPlaceChanged={onPlaceChanged}
+        >
+          <input
+            type="text"
+            name="address"
+            id="address"
+            autoComplete="street-address"
+            value={formData.address}
+            onChange={handleChange}
+            required
+            className="block mt-1 w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm text-blue-950 bg-neutral-50"
+          />
+        </Autocomplete>
+      </LoadScript>
+    </div>
+  </div>
+  <div className="mt-6 text-center">
+    <button
+      type="submit"
+      className="inline-flex justify-center items-center px-6 py-3 w-full text-base font-medium text-white rounded-md border border-transparent shadow-sm bg-orange-900 hover:bg-blue-700"
+    >
+      Submit Request
+    </button>
+  </div>
+</form>
+
             {!isDesktop && (
               <div className="mt-6 text-center">
                 <div className="flex justify-center space-x-4">
