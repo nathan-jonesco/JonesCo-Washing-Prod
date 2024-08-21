@@ -1,6 +1,10 @@
 {
-  "/page": "app/page.js",
-  "/services/driveway-cleaning/page": "app/services/driveway-cleaning/page.js",
+  "/gallery/page": "app/gallery/page.js",
+  "/api/getGoogleReviews/route": "app/api/getGoogleReviews/route.js",
   "/services/window-washing/page": "app/services/window-washing/page.js",
+  "/services/pressure-washing/page": "app/services/pressure-washing/page.js",
+  "/services/soft-washing/page": "app/services/soft-washing/page.js",
+  "/services/gutter-cleaning/page": "app/services/gutter-cleaning/page.js",
+  "/services/house-washing/page": "app/services/house-washing/page.js",
   "/about/page": "app/about/page.js"
 }

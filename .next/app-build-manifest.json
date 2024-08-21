@@ -1,9 +1,9 @@
 {
   "pages": {
-    "/page": [
+    "/gallery/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/page.js"
+      "static/chunks/app/gallery/page.js"
     ],
     "/layout": [
       "static/chunks/webpack.js",
@@ -16,25 +16,40 @@
       "static/chunks/main-app.js",
       "static/chunks/app/not-found.js"
     ],
-    "/services/driveway-cleaning/page": [
+    "/_not-found/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/services/driveway-cleaning/page.js"
+      "static/chunks/app/_not-found/page.js"
     ],
     "/services/window-washing/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/services/window-washing/page.js"
     ],
+    "/services/pressure-washing/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/services/pressure-washing/page.js"
+    ],
+    "/services/soft-washing/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/services/soft-washing/page.js"
+    ],
+    "/services/gutter-cleaning/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/services/gutter-cleaning/page.js"
+    ],
+    "/services/house-washing/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/services/house-washing/page.js"
+    ],
     "/about/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/about/page.js"
-    ],
-    "/testimonials/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/testimonials/page.js"
     ]
   }
 }
