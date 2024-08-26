@@ -1,6 +1,4 @@
 {
-  "/gallery/page": "app/gallery/page.js",
-  "/services/window-washing/page": "app/services/window-washing/page.js",
-  "/about/page": "app/about/page.js",
-  "/page": "app/page.js"
+  "/page": "app/page.js",
+  "/_not-found/page": "app/_not-found/page.js"
 }
