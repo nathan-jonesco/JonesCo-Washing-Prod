@@ -5,7 +5,7 @@ import { usePathname } from 'next/navigation'
 import { motion } from 'framer-motion'
 import Hero from '@/components/Hero'
 import Incentives from '@/components/Incentives'
-
+import CTA from '@/components/CTA-Estimate';
 import Footer from '@/components/Footer'
 import { Header } from '@/components/Header'
 import { Logo } from '@/components/Logo'
@@ -32,7 +32,8 @@ export function Layout({ children, allSections }) {
             <Navigation className="hidden lg:mt-10 lg:block" />
           </div>
         </motion.header>
-        <div className="custom-full-width element relative flex h-full flex-col">
+        <div className=" flex h-full flex-col">
+          <CTA className="not-prose custom-full-width element w-full pt-14" />
           <main className="flex-auto bg-white px-8 pt-10 md:px-0 dark:bg-neutral-900">
             {children}
           </main>
