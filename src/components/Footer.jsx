@@ -69,7 +69,7 @@ function FooterSection({ title, links }) {
 
 export default function Footer() {
   return (
-    <footer className="bg-orange-950 py-12">
+    <footer className="bg-neutral-900 py-12">
       <div className="px-6 mx-auto max-w-7xl lg:px-8">
         <div className="md:flex md:justify-between">
           <div className="hidden md:flex space-x-8">
