@@ -5,8 +5,8 @@
       "static/chunks/_app-pages-browser_node_modules_react-google-maps_api_dist_esm_js.js"
     ]
   },
-  "components/Hero.jsx -> @react-google-maps/api": {
-    "id": "components/Hero.jsx -> @react-google-maps/api",
+  "components/EstimateButton.jsx -> @react-google-maps/api": {
+    "id": "components/EstimateButton.jsx -> @react-google-maps/api",
     "files": [
       "static/chunks/_app-pages-browser_node_modules_react-google-maps_api_dist_esm_js.js"
     ]

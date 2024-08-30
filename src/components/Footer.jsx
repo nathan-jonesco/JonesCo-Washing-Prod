@@ -40,12 +40,12 @@ function FooterSection({ title, links }) {
     <Disclosure>
       {({ open }) => (
         <>
-          <Disclosure.Button className="flex justify-between w-full py-2 text-left text-sm font-medium text-neutral-900 dark:text-neutral-50">
+          <Disclosure.Button className="flex justify-between w-full py-2 text-left text-sm font-medium text-neutral-50">
             <span>{title}</span>
             {open ? (
-              <ChevronUpIcon className="w-5 h-5 text-neutral-500 dark:text-blue-50" />
+              <ChevronUpIcon className="w-5 h-5 text-neutral-50" />
             ) : (
-              <ChevronDownIcon className="w-5 h-5 text-neutral-500 dark:text-blue-50" />
+              <ChevronDownIcon className="w-5 h-5 text-neutral-50" />
             )}
           </Disclosure.Button>
           <Disclosure.Panel className="pt-4 pb-2">
@@ -53,7 +53,7 @@ function FooterSection({ title, links }) {
               {links.map((link) => (
                 <li key={link.name}>
                   <Link href={link.href} legacyBehavior>
-                    <a className="text-sm text-neutral-600 hover:text-neutral-900 dark:text-blue-50 dark:hover:text-neutral-200">
+                    <a className="text-sm   text-neutral-50 hover:text-neutral-200">
                       {link.name}
                     </a>
                   </Link>
@@ -69,17 +69,17 @@ function FooterSection({ title, links }) {
 
 export default function Footer() {
   return (
-    <footer className="bg-blue-50 dark:bg-blue-950 py-12">
+    <footer className="bg-orange-950 py-12">
       <div className="px-6 mx-auto max-w-7xl lg:px-8">
         <div className="md:flex md:justify-between">
           <div className="hidden md:flex space-x-8">
             <div>
-              <h3 className="text-lg font-semibold text-neutral-900 dark:text-neutral-50">Quick Links</h3>
+              <h3 className="text-lg font-black text-neutral-50">Quick Links</h3>
               <ul className="mt-4 space-y-2">
                 {pageLinks.map((link) => (
                   <li key={link.name}>
                     <Link href={link.href} legacyBehavior>
-                      <a className="text-sm text-neutral-600 hover:text-neutral-900 dark:text-blue-50 dark:hover:text-neutral-200">
+                      <a className="text-sm   text-neutral-50 hover:text-neutral-200">
                         {link.name}
                       </a>
                     </Link>
@@ -88,12 +88,12 @@ export default function Footer() {
               </ul>
             </div>
             <div className=''>
-              <h3 className="text-lg font-semibold text-neutral-900 dark:text-neutral-50">Services</h3>
+              <h3 className="text-lg font-black  text-neutral-50">Services</h3>
               <ul className="mt-4 space-y-2">
                 {servicesLinks.map((link) => (
                   <li key={link.name}>
                     <Link href={link.href} legacyBehavior>
-                      <a className="text-sm text-neutral-600 hover:text-neutral-900 dark:text-blue-50 dark:hover:text-neutral-200">
+                      <a className="text-sm   text-neutral-50 hover:text-neutral-200">
                         {link.name}
                       </a>
                     </Link>
@@ -103,12 +103,12 @@ export default function Footer() {
             </div>
             
             <div>
-              <h3 className="text-lg font-semibold text-neutral-900 dark:text-neutral-50">Social Media</h3>
+              <h3 className="text-lg font-black text-neutral-50">Social Media</h3>
               <ul className="mt-4 space-y-2">
                 {socialMediaLinks.map((link) => (
                   <li key={link.name}>
                     <Link href={link.href} legacyBehavior>
-                      <a className="text-sm text-neutral-600 hover:text-neutral-900 dark:text-blue-50 dark:hover:text-neutral-200">
+                      <a className="text-sm text-neutral-50 hover:text-neutral-100 ">
                         {link.name}
                       </a>
                     </Link>
@@ -124,16 +124,16 @@ export default function Footer() {
           </div>
         </div>
         <div className="mt-8 md:flex md:items-center md:justify-between">
-          <p className="text-xs text-center text-neutral-500 dark:text-blue-50">
+          <p className="text-xs text-center text-neutral-50">
             &copy; 2024 JonesCo Window and Pressure Washing. <br></br> All rights reserved.
           </p>
-          <div className="flex justify-center mt-2 space-x-4 text-xs text-neutral-500 dark:text-blue-50">
+          <div className="flex justify-center mt-2 space-x-4 text-xs text-neutral-50">
             <Link href="/privacy" legacyBehavior>
-              <a className="hover:text-neutral-600 dark:hover:text-neutral-200">Privacy Policy</a>
+              <a className="hover:text-neutral-200">Privacy Policy</a>
             </Link>
             <span>|</span>
             <Link href="/termsandconditions" legacyBehavior>
-              <a className="hover:text-neutral-600 dark:hover:text-neutral-200">Terms & Conditions</a>
+              <a className="hover:text-neutral-200">Terms & Conditions</a>
             </Link>
           </div>
         </div>

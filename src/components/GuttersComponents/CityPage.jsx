@@ -8,7 +8,7 @@ import ReviewSnippet from '@/components/ReviewSnippet'
 const QandA = dynamic(() => import('@/components/QandA'), { ssr: false })
 
 // Dynamically import the Hero component
-const Hero = dynamic(() => import('@/components/Hero'), { ssr: false })
+const Hero = dynamic(() => import('@/components/EstimateButton'), { ssr: false })
 
 const services = [
   {

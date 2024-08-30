@@ -3,7 +3,7 @@
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { motion } from 'framer-motion'
-import Hero from '@/components/Hero'
+import Hero from '@/components/EstimateButton.jsx'
 import Incentives from '@/components/Incentives'
 import CTA from '@/components/CTA-Estimate';
 import Footer from '@/components/Footer'
