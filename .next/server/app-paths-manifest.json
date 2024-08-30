@@ -1,8 +1,7 @@
 {
   "/services/driveway-cleaning/page": "app/services/driveway-cleaning/page.js",
-  "/favicon.ico/route": "app/favicon.ico/route.js",
   "/services/pressure-washing/page": "app/services/pressure-washing/page.js",
-  "/about/page": "app/about/page.js",
-  "/services/window-washing/page": "app/services/window-washing/page.js",
-  "/contact/page": "app/contact/page.js"
+  "/contact/page": "app/contact/page.js",
+  "/page": "app/page.js",
+  "/about/page": "app/about/page.js"
 }

@@ -138,7 +138,7 @@ export default function Example() {
                 layout="fill"
                 objectFit="cover"
                 quality={100}
-                className="opacity-20" // Adjust the opacity as needed
+                className="opacity-20 eager" // Adjust the opacity as needed
               />
             </div>
             <h2 className="mx-auto max-w-2xl text-3xl font-bold tracking-tight text-white sm:text-4xl">
