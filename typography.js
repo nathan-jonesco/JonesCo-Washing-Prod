@@ -4,8 +4,8 @@ module.exports = function typographyStyles({ theme }) {
       css: {
         '--tw-prose-body': theme('colors.neutral.700'),
         '--tw-prose-headings': theme('colors.neutral.900'),
-        '--tw-prose-links': theme('colors.orange.500'),
-        '--tw-prose-links-hover': theme('colors.orange.600'),
+        '--tw-prose-links': theme('colors.blue.900'),
+        '--tw-prose-links-hover': theme('colors.blue.600'),
         '--tw-prose-links-underline': theme('colors.orange.500 / 0.3'),
         '--tw-prose-bold': theme('colors.neutral.900'),
         '--tw-prose-counters': theme('colors.neutral.500'),
