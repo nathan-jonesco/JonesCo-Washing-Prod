@@ -1,8 +1,11 @@
 {
-  "/counties/cocke/page": "app/counties/cocke/page.js",
-  "/counties/greene/page": "app/counties/greene/page.js",
-  "/counties/hamblen/page": "app/counties/hamblen/page.js",
   "/counties/sevier/page": "app/counties/sevier/page.js",
   "/services/window-washing/page": "app/services/window-washing/page.js",
-  "/services/pressure-washing/page": "app/services/pressure-washing/page.js"
+  "/services/pressure-washing/page": "app/services/pressure-washing/page.js",
+  "/services/soft-washing/page": "app/services/soft-washing/page.js",
+  "/about/page": "app/about/page.js",
+  "/testimonials/page": "app/testimonials/page.js",
+  "/careers/page": "app/careers/page.js",
+  "/warranty/page": "app/warranty/page.js",
+  "/counties/cocke/page": "app/counties/cocke/page.js"
 }

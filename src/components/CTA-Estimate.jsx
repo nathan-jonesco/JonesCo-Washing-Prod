@@ -128,7 +128,7 @@ export default function Example() {
 
   return (
     <>
-      <div className="bg-white">
+      <div className="bg-white dark:bg-neutral-900">
         <div className="pt-10 sm:pt-24 mx-auto max-w-7xl sm:px-6 lg:px-8">
           <div className="relative isolate overflow-hidden px-6 py-12 text-center shadow-2xl sm:rounded-3xl sm:px-16 bg-blue-900">
             <div className="absolute inset-0 -z-10">
